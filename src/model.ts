@@ -1,14 +1,13 @@
 import { IEmployee } from "./interfaces.js";
+import mongoose from "mongoose";
+import { Employee } from "./models/Employee.js";
 
-export const getEmployees = (): IEmployee[] => {
-	return [
-		{
-			firstName: "Hans2"
-		},
-		{
-			firstName: "Angela"
-		}
-	]
+export const getEmployees = async () => {
+	const employees = await Employee.find().select('firstName lastName title notes') ;
+	if (employees.length === 0) {
+		throw new Error('there is no data');
+	}
+	return employees;
 }
 
 export const getApiInstructions = () => {
