@@ -18,4 +18,4 @@ content-type: application/json
 }
 
 ### DELETE EMPLOYEE
-DELETE {{url}}/employee/63bf5b755a88a52a71dfc65f
+DELETE {{url}}/employee/63bfe65756850ee37d9e49b8
