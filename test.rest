@@ -5,3 +5,17 @@
 
 ### ALL EMPLOYEES
 {{url}}/employees
+
+### ADD EMPLOYEE
+POST {{url}}/employee
+content-type: application/json
+ 
+{
+	"lastName": "Addington",
+	"firstName": "Arthur",
+	"title": "Sales Representative",
+	"notes": "Author is a test employee that we are adding."
+}
+
+### DELETE EMPLOYEE
+DELETE {{url}}/employee/63bf5b755a88a52a71dfc65f

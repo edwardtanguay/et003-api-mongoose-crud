@@ -6,6 +6,6 @@ const employeeSchema = new Schema<IEmployee>({
 	lastName: String,
 	title: String,
 	notes: String
-});
+}, { versionKey: false });
 
 export const Employee = model('employee', employeeSchema);
