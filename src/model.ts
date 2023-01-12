@@ -1,3 +1,16 @@
+import { IEmployee } from "./interfaces.js";
+
+export const getEmployees = (): IEmployee[] => {
+	return [
+		{
+			firstName: "Hans2"
+		},
+		{
+			firstName: "Angela"
+		}
+	]
+}
+
 export const getApiInstructions = () => {
 	return `
 <style>
